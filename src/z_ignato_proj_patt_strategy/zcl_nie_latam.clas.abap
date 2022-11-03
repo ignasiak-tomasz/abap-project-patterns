@@ -1,0 +1,21 @@
+CLASS zcl_nie_latam DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+    INTERFACES zif_latanie .
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zcl_nie_latam IMPLEMENTATION.
+  METHOD zif_latanie~lec.
+    New-Line.
+    WRITE: |Nie latam|.
+  ENDMETHOD.
+
+ENDCLASS.

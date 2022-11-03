@@ -1,0 +1,21 @@
+CLASS zcl_nie_kwacz DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+    INTERFACES zif_kwakanie .
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zcl_nie_kwacz IMPLEMENTATION.
+  METHOD zif_kwakanie~kwacz.
+    NEW-LINE.
+    WRITE: |Nie Kwacz|.
+  ENDMETHOD.
+
+ENDCLASS.

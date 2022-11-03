@@ -1,0 +1,21 @@
+CLASS zcl_piszcz DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+    INTERFACES zif_kwakanie .
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zcl_piszcz IMPLEMENTATION.
+  METHOD zif_kwakanie~kwacz.
+    NEW-LINE.
+    WRITE: |Piszczenie Kaczki|.
+  ENDMETHOD.
+
+ENDCLASS.
